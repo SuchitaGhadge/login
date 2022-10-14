@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="container text-center ">
+        <div class="card mt-3 w-50">
+            <div class="card-header text-center">
+                <h4 class="p-3">
+                    {{studentDetails.studentName}}
+                </h4>
+            </div>
+            <div class="card-body text-start mt-4 p-2">
+                <p class="pb-2">Student ID : <span class="fw-bold pe-2">{{studentDetails.studentId}}</span> </p>
+                <p class="pb-2">
+                    Marks : <span class="fw-bold pe-2">{{studentDetails.studentMarks}}</span>
+                </p>
+                <p class="pb-2">
+                    Date of Exam : <span class="fw-bold pe-2">{{studentDetails.date | date}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

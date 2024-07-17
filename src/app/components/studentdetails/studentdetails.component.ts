@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormDataService } from 'src/app/services/form-data.service';
+import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-studentdetails',
-  templateUrl: './studentdetails.component.html',
-  styleUrls: ['./studentdetails.component.css']
+    selector: 'app-studentdetails',
+    templateUrl: './studentdetails.component.html',
+    styleUrls: ['./studentdetails.component.css'],
+    standalone: true,
+    imports: [DatePipe]
 })
 export class StudentdetailsComponent implements OnInit {
   studentID: any

@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormBuilder, Validators} from '@angular/forms'
+import { FormGroup, FormBuilder, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { Router } from '@angular/router';
 import { FormDataService } from '../../services/form-data.service';
+import { ButtonModule } from 'primeng/button';
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+    selector: 'app-form',
+    templateUrl: './form.component.html',
+    styleUrls: ['./form.component.css'],
+    standalone: true,
+    imports: [FormsModule, ReactiveFormsModule, ButtonModule]
 })
 export class FormComponent implements OnInit {
   studentForm : FormGroup
